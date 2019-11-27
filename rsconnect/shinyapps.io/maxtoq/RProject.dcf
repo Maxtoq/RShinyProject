@@ -1,0 +1,12 @@
+name: RProject
+title: RProject
+username:
+account: maxtoq
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1534294
+bundleId: 2622840
+url: https://maxtoq.shinyapps.io/RProject/
+when: 1574887003.88153
+asMultiple: FALSE
+asStatic: FALSE

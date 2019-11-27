@@ -15,7 +15,7 @@ bins_Rape <- c(0, 5, 10, 15, 20, 25, 30, 35, 40, Inf)
 pal_Rape <- colorBin("YlOrRd", domain = USArrests$Rape, bins = bins_Rape)
 
 ui <- fluidPage(
-  
+  titlePanel("US Arrests"),
   mainPanel(
     tabsetPanel(
       tabPanel("Murder",
@@ -27,6 +27,17 @@ ui <- fluidPage(
       tabPanel("Rape",
                leafletOutput("map_Rape")
                )
+    ),
+    sidebarLayout(
+      sidebarPanel(
+        radioButtons("x", "Select X-axis:", 
+                     list("Muder"='Murder', "Assault"='Assault', "Rape"='Rape')),
+        radioButtons("y", "Select Y-axis:", 
+                     list("Muder"='Murder', "Assault"='Assault', "Rape"='Rape'))
+      ), 
+      mainPanel(
+        plotOutput("plot")
+      )
     )
   )
 )
@@ -105,7 +116,7 @@ server <- function(input, output, session) {
   
   output$map_Rape <- renderLeaflet({
     labels <- sprintf(
-      "<strong>%s</strong><br/>%g assault arrests / 100 000",
+      "<strong>%s</strong><br/>%g rape arrests / 100 000",
       rownames(USArrests), USArrests$Rape
     ) %>% lapply(htmltools::HTML)
     
@@ -136,6 +147,10 @@ server <- function(input, output, session) {
       addLegend(pal = pal_Rape, values = ~density, opacity = 0.7, title = NULL,
                 position = "bottomright")
     
+  })
+  
+  output$plot <- renderPlot({
+    plot(USArrests[, input$x], USArrests[, input$y], xlab=input$x, ylab=input$y)
   })
 }
 
