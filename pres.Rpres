@@ -1,0 +1,51 @@
+US Arrests Dataset 
+========================================================
+author: Toquebiau Maxime, Thery Antoine, Bosseray Alexis
+date: 11/28/19
+autosize: true
+### https://maxtoq.shinyapps.io/RProject/
+
+Dataset description
+========================================================
+
+statistics in arrests per 100 000 people for assault murder and rape in all 50 US states in 1973.
+
+
+- Data frame with 50 observations (US States) 
+- 4 variables (murder,rape,assault, urban_pop)
+
+
+Data head
+========================================================
+
+```{r}
+data("USArrests")
+head(USArrests)
+```
+
+Data summary
+========================================================
+
+```{r}
+
+summary(USArrests)
+```
+
+
+
+Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(USArrests$Murder, USArrests$Rape, xlab="Murder", ylab="Rape")
+plot(USArrests$Assault, USArrests$Murder, xlab="Assault", ylab="Murder")
+```
+
+
+Map
+========================================================
+
+![map_img](assets/maps.png)
+
+```{r, echo=FALSE}
+```
