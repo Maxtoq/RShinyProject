@@ -30,7 +30,10 @@ summary(USArrests)
 Plot
 ========================================================
 
+scatter plot between murder and rape and murder and assault variables to see if there is any correlation between the 2
+
 ```{r, echo=FALSE}
+
 plot(USArrests$Murder, USArrests$Rape, xlab="Murder", ylab="Rape")
 plot(USArrests$Assault, USArrests$Murder, xlab="Assault", ylab="Murder")
 ```
@@ -38,7 +41,7 @@ plot(USArrests$Assault, USArrests$Murder, xlab="Assault", ylab="Murder")
 
 Map
 ========================================================
-
+chloropelth map plot for murder variable we can see the differences in arrests between the different states
 ![map_img](assets/maps.png)
 
 ```{r, echo=FALSE}

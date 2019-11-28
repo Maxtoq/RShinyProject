@@ -5,6 +5,7 @@ date: 11/28/19
 autosize: true
 ### https://maxtoq.shinyapps.io/RProject/
 ### https://github.com/Maxtoq/RShinyProject
+### http://rpubs.com/antoineth/554415
 
 
 Dataset description
@@ -40,12 +41,14 @@ summary(USArrests)
 Plot
 ========================================================
 
+scatter plot between murder and rape and murder and assault variables to see if there is any correlation between the 2
+
 ![plot of chunk unnamed-chunk-2](pres-figure/unnamed-chunk-2-1.png)![plot of chunk unnamed-chunk-2](pres-figure/unnamed-chunk-2-2.png)
 
 
 Map
 ========================================================
-
+chloropelth map plot for murder variable we can see the differences in arrests between the different states
 ![map_img](assets/maps.png)
 
 
