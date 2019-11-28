@@ -15,25 +15,6 @@ statistics in arrests per 100 000 people for assault murder and rape in all 50 U
 - 4 variables (murder,rape,assault, urban_pop)
 
 
-Data head
-========================================================
-
-
-```r
-data("USArrests")
-head(USArrests)
-```
-
-```
-           Murder Assault UrbanPop Rape
-Alabama      13.2     236       58 21.2
-Alaska       10.0     263       48 44.5
-Arizona       8.1     294       80 31.0
-Arkansas      8.8     190       50 19.5
-California    9.0     276       91 40.6
-Colorado      7.9     204       78 38.7
-```
-
 Data summary
 ========================================================
 
@@ -57,7 +38,7 @@ summary(USArrests)
 Plot
 ========================================================
 
-![plot of chunk unnamed-chunk-3](pres-figure/unnamed-chunk-3-1.png)![plot of chunk unnamed-chunk-3](pres-figure/unnamed-chunk-3-2.png)
+![plot of chunk unnamed-chunk-2](pres-figure/unnamed-chunk-2-1.png)![plot of chunk unnamed-chunk-2](pres-figure/unnamed-chunk-2-2.png)
 
 
 Map

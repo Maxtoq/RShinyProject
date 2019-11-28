@@ -15,14 +15,6 @@ statistics in arrests per 100 000 people for assault murder and rape in all 50 U
 - 4 variables (murder,rape,assault, urban_pop)
 
 
-Data head
-========================================================
-
-```{r}
-data("USArrests")
-head(USArrests)
-```
-
 Data summary
 ========================================================
 
