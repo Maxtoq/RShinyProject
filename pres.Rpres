@@ -4,6 +4,8 @@ author: Toquebiau Maxime, Thery Antoine, Bosseray Alexis
 date: 11/28/19
 autosize: true
 ### https://maxtoq.shinyapps.io/RProject/
+### https://github.com/Maxtoq/RShinyProject
+
 
 Dataset description
 ========================================================
