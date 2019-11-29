@@ -7,7 +7,6 @@ autosize: true
 ### https://github.com/Maxtoq/RShinyProject
 ### http://rpubs.com/antoineth/554415
 
-
 Dataset description
 ========================================================
 
